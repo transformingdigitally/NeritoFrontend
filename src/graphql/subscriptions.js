@@ -1,0 +1,51 @@
+export const onCreateOrganizations = `
+subscription OnCreateOrganizations {
+  onCreateOrganizations {
+    AccountUsers
+    AccountClabe
+    Month
+    Year
+    TypeAccount
+    Addresses
+    AuditDescription
+    AuditEvent
+    Auditor
+    BankId
+    Birthdate
+    Config
+    Contacts
+    CreatedBy
+    CreatedDate
+    Email
+    EmployeeEnrollmentDate
+    EmployeeId
+    EnrollmentDate
+    EnrollmentType
+    FileId
+    FileName
+    FileType
+    Name
+    FiscalInfo
+    TransferTo
+    Id
+    LastModified
+    LastName
+    LogoLink
+    OrgDetails
+    OrgName
+    OrganizationId
+    PayrollDisbursement
+    PayrollUsers
+    RFC
+    SK
+    Status
+    TimeZone
+    UploadedBy
+    AccountType
+    BankId
+    AccountClabe
+    Contact
+    OriginAccount
+    ResponseMessage
+  }
+}`;

@@ -1,0 +1,104 @@
+// @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
+
+$font-stack: "Nunito", sans-serif !important;
+$font-bold-4: 400;
+$font-bold-6: 600;
+$font-bold-7: 700;
+$font-bold-8: 800;
+
+$primaryColor: #44A38B;
+$secondaryColor: #CCC73B;
+$tertiaryColor: #EDDD64;
+$inActiveColor: #f8f8f8;
+$fontColor: #e3e3e3;
+$titleColor: #3B9A83;
+$errorColor: #EE715B;
+$successColor: #19C69A;
+$darkgray: #434343;
+$gray: #9A9A9A;
+$black: #000000;
+$white: #ffffff;
+$shadow-color-green: #4d9b87;
+$shadow-color-model: #9A9A9A;
+$shadow-color-button:$black;
+
+
+html , body{font-family: $font-stack; transition: all .3s; height: 100%; -webkit-font-smoothing: antialiased!important;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);}
+
+/*
+$b  = border thickness
+$bt = border type
+$bc = border colour
+$tl = border-top-left-radius
+$tr = border-top-right-radius
+$br = border-bottom-right-radius
+$bl = border-bottom-left-radius
+*/
+@mixin border-radius($tl:null, $tr:null, $br:null, $bl:null, $b: null, $bt: null, $bc: null) {
+    border: $b $bt $bc;
+    border-top-left-radius: $tl;
+    border-top-right-radius: $tr;
+    border-bottom-right-radius: $br;
+    border-bottom-left-radius: $bl;
+  }
+@mixin box-shadow($shadow...) {
+-webkit-box-shadow: $shadow;
+    -moz-box-shadow: $shadow;       
+        box-shadow: $shadow;
+}
+  
+@mixin font-14{
+    font-weight: $font-bold-6;
+    font-family: $font-stack;
+    font-size: 0.875rem; 
+}
+@mixin font-12{
+    font-weight: $font-bold-6;
+    font-family: $font-stack;
+    font-size: 0.75rem; 
+}
+@mixin font-16{
+    font-weight: $font-bold-6;
+    font-family: $font-stack;
+    font-size: 1rem; 
+}
+@mixin font-20{
+    font-weight: $font-bold-8;
+    font-family: $font-stack;
+    font-size: 1.25rem; 
+}
+@mixin font-24{
+    font-weight: $font-bold-8;
+    font-family: $font-stack;
+    font-size: 1.5rem; 
+}
+@mixin restrict-window{height: 100%;
+    min-height: 680px;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    // overflow: hidden;
+}
+@mixin rem-box{
+    background: none; border-radius: 0; box-shadow: none;
+}
+@mixin h2-heading{
+    @include font-24; 
+    font-family: $font-stack;
+}
+@mixin model-theme($theme: LightGray) {
+    background: $theme;
+    box-shadow: 0 0 1px rgba($theme, .25);
+    color:$darkgray;
+    font: $font-stack;
+    background: $white;
+    @include border-radius(8px, 8px, 8px, 8px, 1px, $bt:solid, $bc:$gray);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+  }
+  @mixin truncateText($overflow: ellipsis){
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: $overflow;
+}
+.noscroll {overflow: hidden;}

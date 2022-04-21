@@ -1,0 +1,287 @@
+@import "../../app.scss";
+// .MuiModal-root{background: rgb(255 255 255 / 35%);}
+.complistModelContainer {
+  font-family: $font-stack;
+  .cl-modelinner {
+    // table {
+    //     min-width: 650px;
+    //     max-width: 1280px;
+    //   }
+    @include model-theme;
+    h2 {
+      color: $darkgray;
+      margin-bottom: 24px;
+      @include h2-heading;
+    }
+    .closeBtnWrap {
+      display: inline-block;
+      width: 100%;
+      text-align: right;
+    }
+    p.MuiTypography-root {
+      @include font-14;
+      color: $darkgray;
+    }
+    .cl-modelform {
+      .cl-frmcolumn {
+        .cl-frmcontainer {
+          margin-bottom: 0.75rem;
+          position: relative;
+          .cl-txtfld {
+            display: inline-block;
+            .MuiOutlinedInput-root {
+              @include font-12;
+              input[type="text"] {
+                @include font-14;
+                border-radius: 8px;
+              }
+            }
+            .MuiSelect-select {
+              @include font-14;
+            }
+          }
+          .cl-disbursmentwrap {
+            .disbursement-lbl {
+              line-height: 20px;
+              padding-left: 16px;
+              p {
+                padding-top: 8px;
+                display: inline-block;
+                color: $primaryColor;
+              }
+            }
+            .cl-selectfield {
+              @include font-14;
+              .MuiOutlinedInput-root {
+                @include font-12;
+              }
+              .Mui-error {
+                p.MuiFormHelperText-root {
+                  @include font-12;
+                }
+                p.Mui-error {
+                  @include font-12;
+                }
+              }
+            }
+          }
+          .select-lbl {
+            position: absolute;
+            @include font-14;
+            top: -6px;
+          }
+          .cl-txtfld {
+            .Mui-error {
+              p.MuiFormHelperText-root {
+                @include font-12;
+              }
+              p.Mui-error {
+                @include font-12;
+              }
+            }
+          }
+          .cl-txtarea {
+            .MuiOutlinedInput-root {
+              padding: 12px 8px;
+            }
+            p.MuiFormHelperText-root {
+              @include font-12;
+            }
+            p.Mui-error {
+              @include font-12;
+              top: 108px;
+            }
+            .MuiOutlinedInput-input {
+              @include font-14;
+              padding: 4px;
+            }
+          }
+        }
+      }
+      .cl-selectfield {
+        @include font-14;
+        .MuiInputBase-root {
+          @include font-14;
+          .MuiOutlinedInput-input {
+            @include font-14;
+          }
+        }
+      }
+    }
+    .buttonwrapper {
+      margin-top: 16px;
+      .companyFormSubmit {
+        @include font-14;
+      }
+      .companyFormReset {
+        @include font-14;
+      }
+    }
+    .MuiInputBase-root {
+      width: 100%;
+      @include font-14;
+    }
+    .MuiFormHelperText-root {
+      margin-left: 0px;
+      font-family: $font-stack;
+      position: absolute;
+      top: 34px;
+      width: 100%;
+      text-align: right;
+    }
+  }
+  .uploadDataModelContent {
+    .upload-container-outer {
+      position: relative;
+      .archivo-lbl {
+        position: absolute;
+        background: $white;
+        padding: 2px 4px;
+        font-size: 14px;
+        color: $black;
+        top: 3px;
+        left: 32px;
+        z-index: 1;
+      }
+    }
+  }
+
+  .upload-container {
+    border-radius: 8px;
+    border: 1px solid #eaeaea;
+    padding: 24px 20px;
+    height: 100%;
+    position: relative;
+    text-align: center;
+
+    .dropzone-wrap {
+      border-radius: 4px !important;
+      background: #fafafa;
+      border-width: 1px !important;
+      border-color: #c4c4c4 !important;
+      border-style: dashed;
+      .dropzone-inst {
+        @include font-16;
+        font-weight: $font-bold-6;
+        color: #5d5d5d;
+      }
+      .or-txt {
+        @include font-20;
+        font-weight: $font-bold-7;
+        color: #000000;
+      }
+      .uploadbtn {
+        border-radius: 4px;
+        border: 1px solid #d4d4d4;
+        @include font-12;
+        text-transform:initial;
+        color: $white;
+        font-weight: $font-bold-4;
+        padding: 6px 18px;
+      }
+    }
+    .validate-control-wrap {
+      background: #fafafa;
+      border: 1px solid #c4c4c4;
+      border-radius: 4px;
+      padding: 8px 8px 8px 16px;
+      .vfile-info-wrap{
+        .validate-file-info{
+          .validate-file-icon{
+            top: 2px;
+            position: relative;
+          }
+          .validate-file-name{
+            @include font-12;
+            top: -2px;
+            position: relative;
+          }
+        }
+      }
+      .exmine-button-wrap{
+        .examine-btn{
+          @include font-14;
+          text-transform: initial;
+        }
+      }
+      .validate-data {
+        text-transform: capitalize;
+        border: 1px solid $primaryColor;
+        background: $white;
+        @include font-14;
+      }
+    }
+    .error-wrapper {
+      margin: 8px;
+      .validator-txt {
+        color: $errorColor;
+        @include font-12;
+      }
+      .viewerr-wrap {
+        @include font-12;
+        color: $darkgray;
+        text-decoration: underline;
+      }
+    }
+    .csvSubmitWrap {
+      margin-top: 16px;
+      margin-left: 30px;
+      margin-right: 30px;
+      .empCSVSubmitBtn {
+        @include font-14;
+        padding: 8px 34px;
+      }
+    }
+  }
+
+  .upload-container-div {
+    flex: 1;
+    display: "flex";
+    flex-direction: "column";
+    align-items: "center";
+    padding: "20px";
+    border-width: "2px";
+    border-radius: "2px";
+    border-color: "#2196f3";
+    border-style: "dashed";
+    background-color: "#fafafa";
+    color: "#bdbdbd";
+    outline: "none";
+    transition: "border .24s ease-in-out";
+    min-height: "50%",
+  }
+
+  .upload-inst-list {
+    padding: 0 16px;
+    .upload-inst-title {
+      @include font-16;
+      color: $black;
+      text-align: left;
+      font-weight: $font-bold-6;
+    }
+    .listrow {
+      @include font-16;
+      color: $darkgray;
+      .steps-txt {
+        font-weight: $font-bold-4;
+      }
+      .desc-txt {
+        font-weight: $font-bold-7;
+      }
+    }
+    .download-sample-wrapper {
+      margin: 16px 0 16px 0;
+    }
+    .download-template-btn {
+      @include font-14;
+      font-weight: $font-bold-8;
+      // border: 2px solid #ccc73b;
+      border-radius: 4px;
+    }
+  }
+}
+ul.MuiList-root {
+  li {
+    @include font-14;
+  }
+}

@@ -1,0 +1,15 @@
+/*Icons*/
+a [class^="icon-"], a [class*=" icon-"] {display: inline-block;}
+[class^="icon-"], [class*=" icon-"] {
+    background-image: url("../images/blank.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 28px;
+    width: 28px;
+    line-height: 28px;
+    vertical-align: middle;
+}
+.icon-about{background-position:-33px 0;}
+.icon-info{ background:url('../images/info-icon.svg') 0 0 no-repeat; height: 18px; width:18px; line-height: 18px; background-size: 18px 18px;}
+.bar-angle{ background:url('../images/bar-angle.svg') 0 0 no-repeat; height: 16px; width:16px; line-height: 16px; background-size: 16px 16px;}

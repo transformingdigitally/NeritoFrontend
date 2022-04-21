@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:regular,bold,italic&subset=latin,latin-ext');
+@import "./icons.scss";
+@import "../../app.scss";
+
+html , body{ height: 100%;  font: $font-stack; }
+::selection {
+    background: #EE715B;
+    text-shadow: none;
+    color: #fff;
+}
+.fill-window {
+  @include restrict-window;
+}
+[data-reactroot] {height: 100% !important; }
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */color: #C4C4C4;opacity: 1; /* Firefox */}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */color: #C4C4C4;}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #C4C4C4;
+}
+:root {
+  --page-header-bgColor: #242e42;
+  --page-header-bgColor-hover: #1d2636;
+  --page-header-txtColor: #dde9f8;
+  --page-header-headingColor: #7889a4;
+  --page-header-width: 220px;
+  --page-content-bgColor: #f0f1f6;
+  --page-content-txtColor: #171616;
+  --page-content-blockColor: #fff;
+  --white: #fff;
+  --black: #333;
+  --blue: #00b9eb;
+  --red: #ec1848;
+  --border-radius: 4px;
+  --box-shadow: 0 0 10px -2px rgba(0, 0, 0, 0.075);
+}
+ 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+  }
+   
+  a,
+  button {
+    color: inherit;
+    transition: all 180ms ease-in;
+    -webkit-transition: all 180ms ease-in;
+    background: none;
+    cursor: pointer;
+  }
+   
+  a {
+    text-decoration: none;
+      transition: all 180ms ease-in;
+      -webkit-transition: all 180ms ease-in;
+      &:hover {
+        -webkit-transition: all 180ms ease-in;
+        transition: all 180ms ease-in;
+    }
+  }
+  .main-container{
+    height: 100vh;
+    position: relative;
+    .nav-outer{
+      height: 100vh;
+      .nav-inner{
+        height: 100vh;
+      }
+    }
+    .MuiBox-root{height: 100vh;}
+    .MuiButton-root{
+      font-family: $font-stack; 
+      @include font-14;
+      font-weight: $font-bold-6;
+      // &:hover{background-color: #6EB89D;}
+    }
+    .MuiTypography-root{font-family: $font-stack;  color: $darkgray;}
+    .MuiTableCell-root{font-family: $font-stack; color: $darkgray;}
+    .side-drawer{
+      position: relative;
+      z-index: 99;
+      .sidebar-bottom-wrap{
+        position:absolute; bottom: 0; width: 100%; text-align: center; margin-bottom: 42px;
+        .sbmenu-noti{
+          margin:28px ​0; padding: 24px; width: 100%;
+          text-align: center;
+          display: inline-block;
+          .listicon-noti{min-width: auto;}
+        }
+        .logout-item{
+          margin:28px ​0; padding: 24px; width: 100%;
+          text-align: center;
+          display: inline-block; 
+          .MuiListItemIcon-root{min-width: auto;}
+          .logout-icon{width: 18px;}
+        }
+        .avatar-wrapper{margin-top: 24px;}
+      }
+    }
+  }

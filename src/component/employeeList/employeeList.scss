@@ -1,0 +1,133 @@
+body {
+  background: #f6f6f6;
+}
+
+.test {
+  .main-container {
+    .MuiTableCell-root {
+      color: red !important;
+    }
+  }
+}
+.main-container {
+  .progressloader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    .MuiLinearProgress-root {
+      height: 8px;
+    }
+  }
+  .sidepanel-wrap {
+    .side-drawer,
+    .MuiDrawer-root {
+      .MuiDrawer-paper {
+        background: #3b9a83;
+        min-height: 640px;
+      }
+      .MuiPaper-root {
+        .sidepanel-open-btn {
+          position: absolute;
+          left: 4%;
+          z-index: 999;
+          margin: 0;
+          top: 1%;
+        }
+        .sidepanel-close-btn {
+          margin: 0;
+          top: 13%;
+          position: relative;
+          left: 3px;
+        }
+        .divider-sidebar {
+          margin: 24px 0;
+        }
+        .sbmenulist {
+          .sbmenu-item {
+            margin-bottom: 24px;
+            .MuiListItemIcon-root {
+              min-width: 50px;
+              margin-left: 6px;
+              .MuiSvgIcon-root {
+                color: #ffffff;
+              }
+            }
+            .MuiListItemText-root {
+              color: #ffffff;
+              .MuiTypography-root,
+              .MuiListItemText-primary {
+                color: #ffffff;
+                font-weight: 700;
+              }
+            }
+          }
+        }
+      }
+    }
+    .drawer-content-wrapper {
+      .css-1u2mxbp {
+        display: none;
+      }
+      .page-title-wrap {
+        margin-bottom: 24px;
+        .companylist-title-wrap {
+          h4 {
+            color: #3b9a83;
+            font-weight: 800;
+            font-size: 24px;
+          }
+        }
+      }
+      .payroll-tbl-wrap {
+        .payroll-tbl-inner {
+          .search-wrap {
+            margin: 24px 0;
+          }
+        }
+        .table-wrapper-outer {
+          background: $white;
+          margin-top: 24px;
+          border: 1px solid #e0e0e0;
+          table {
+            font-family: $font-stack; 
+            width: 100%;
+            thead {
+              font-family: $font-stack; 
+              font-weight: 700;
+              tr {
+                th {
+                  font-family: $font-stack; 
+                  font-weight: 700;
+                  position: relative;
+                  span {
+                    position: absolute;
+                    right: 0;
+                    top: 32%;
+                  }
+                }
+              }
+            }
+            tbody {
+              tr {
+                td {
+                  .status-btn {
+                    font-size: 14px;
+                    width: 84%;
+                    color: $white;
+                    text-transform: none;
+                  }
+                  .comp-desc-cell {
+                    width: 150px;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

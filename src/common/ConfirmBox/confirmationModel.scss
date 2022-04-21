@@ -1,0 +1,10 @@
+.ConfirmationModelContainer{
+    font-family: 'Nunito', sans-serif !important;
+    .confirm-modelinner{
+        border-radius: 10px;
+        background: #F4F3F3;
+        .closeBtnWrap{display: inline-block; width: 100%; text-align: right;}
+        h2{font-size: 18px; font-weight: 700; color: #434343; font-family: 'Nunito', sans-serif !important;  text-align: center; margin: 16px;}
+        .confirm-btn-wrap{margin-top: 40px; margin-bottom: 16px;}
+    }
+}

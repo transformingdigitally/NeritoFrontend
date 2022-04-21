@@ -1,0 +1,110 @@
+@import "../../app.scss";
+// .MuiModal-root{background: rgb(255 255 255 / 35%);}
+.complistModelContainer{
+    font-family: $font-stack;
+    .cl-modelinner{
+        
+        @include model-theme;
+        h2{ color: $darkgray; margin-bottom: 24px; @include h2-heading; }
+        .closeBtnWrap{display: inline-block; width: 100%; text-align: right;}
+        p.MuiTypography-root{@include font-14; color: $darkgray;}
+        .cl-modelform{
+            .cl-frmcolumn{
+                .cl-frmcontainer{
+                    margin-bottom: 0.75rem;
+                    position: relative;
+                    .cl-txtfld{
+                        display: inline-block; 
+                        .MuiOutlinedInput-root{
+                            @include font-12;
+                            input[type="text"]{@include font-14; border-radius: 8px; }
+                        }
+                        .MuiSelect-select{
+                            @include font-14;
+                        }
+                    }
+                    .cl-disbursmentwrap{
+                        
+                            .disbursement-lbl{
+                                line-height: 20px; padding-left: 16px;
+                                p{padding-top: 8px; display: inline-block; color: $primaryColor;}
+                            }
+                            .cl-selectfield{
+                                @include font-14; 
+                                .MuiOutlinedInput-root{@include font-12;}
+                                .Mui-error{
+                                    p.MuiFormHelperText-root{@include font-12;}
+                                    p.Mui-error{@include font-12;}
+                                }
+                            }
+                        
+                    }
+                    .select-lbl{position: absolute; @include font-14; top: -6px;}
+                    .cl-txtfld{
+                        .Mui-error{
+                            p.MuiFormHelperText-root{@include font-12;}
+                            p.Mui-error{@include font-12;}
+                        }
+                    }
+                    .cl-txtarea{
+                        .MuiOutlinedInput-root{padding: 12px 8px;}
+                        p.MuiFormHelperText-root{@include font-12;}
+                        p.Mui-error{@include font-12; top:108px;}
+                        .MuiOutlinedInput-input{
+                            @include font-14; padding: 4px;
+                        }
+                    }
+                    
+                    
+                }
+                
+            }
+            .cl-selectfield{
+                @include font-14;
+                .MuiInputBase-root{
+                    @include font-14;
+                    .MuiOutlinedInput-input {@include font-14;}
+                }
+            }
+            
+        }
+        .buttonwrapper{
+            margin-top: 16px;
+            .companyFormSubmit{@include font-14;}
+            .companyFormReset{@include font-14;}
+        }
+        .MuiInputBase-root{
+            width: 100%;
+            @include font-14;  
+        }
+        .MuiFormHelperText-root  {
+            margin-left: 0px;
+            font-family: $font-stack;
+            position: absolute;
+            top: 34px;
+            width: 100%;
+            text-align: right;
+        }
+        
+    }
+}
+ul.MuiList-root{
+    li{
+        @include font-14;
+    }
+}
+.required {
+    color: red;
+  }
+.requireds {
+    color: red;
+    padding-right: 156px;
+    font-size: 0.95rem;
+    margin-top: 25px;
+    line-height: 4.66;
+  }
+  .logoContainers {
+    font-size: 0.95rem;
+    margin-top: 25px;
+    line-height: 4.66;
+  }
